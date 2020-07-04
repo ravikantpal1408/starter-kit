@@ -1,9 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './style.css';
+import App from './container/main/App';
 
-function Hi() {
-  return <p>Hi</p>;
+import './index.css';
+
+function Root() {
+  return <App />;
 }
 
-render(<Hi />, document.getElementById('app'));
+render(<Root />, document.getElementById('app'));
